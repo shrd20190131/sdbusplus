@@ -36,7 +36,7 @@ SdBusError::SdBusError(sd_bus_error* error, const char* prefix,
 
 SdBusError::SdBusError(SdBusError&& other) : error(SD_BUS_ERROR_NULL)
 {
-    //move(std::move(other));
+    move(std::move(other));
 }
 
 SdBusError& SdBusError::operator=(SdBusError&& other)
