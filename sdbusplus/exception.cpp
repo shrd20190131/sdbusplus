@@ -50,7 +50,7 @@ SdBusError& SdBusError::operator=(SdBusError&& other)
 
 SdBusError::~SdBusError()
 {
-    intf->sd_bus_error_free(&error);
+    //intf->sd_bus_error_free(&error);
 }
 
 const char* SdBusError::name() const noexcept
