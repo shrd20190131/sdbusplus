@@ -20,7 +20,7 @@ SdBusError::SdBusError(int error, const char* prefix, SdBusInterface* intf) :
         throw std::runtime_error("Failed to create SdBusError");
     }
 
-    //populateMessage(prefix);
+    populateMessage(prefix);
 }
 
 SdBusError::SdBusError(sd_bus_error* error, const char* prefix,
